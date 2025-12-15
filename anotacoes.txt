@@ -1,0 +1,54 @@
+
+#Instalar o PNPM e Node 24
+
+#Criar 
+npx create-next-app@16 aparatus
+pnpm dlx create-nex-app@16
+cd aparatus
+
+#Executar o projeto
+pnpm run dev
+
+
+#Instalar no VSCode
+tailwind
+ESLint
+Prettier - Code Formatter
+
+#Configurar o prettier
+Ctr+Ship+P
+Pesquisar por:  "default formatter" e mudar para "Prettier"
+                "format on save" e marcar
+
+Instalar o plugin: prettier-puglin-tailwindcss
+pnpm add -D prettier@3.6.2 prettier-plugin-tailwindcss@0.71 eslint-plugin-simple-sort@12.1.1
+
+#para ativar - Criar um arquivo o arquivo ".prettierrc" na raiz do projeto
+
+-------------------------------------------------------------------------#Acrescentar as seguintes linhas no arquivo: "eslint.config.mjs"
+import simpleImportSort from "eslint-plugin-simple-import-sort";
+
+{
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+    },
+    rules: {
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+    },
+  },
+-------------------------------------------------------------------------
+
+#instalar a biblioteca de componentes "shadcn" que traz bastante componentes
+
+pnpm dlx shadcn@3.5.0 init
+
+
+#Instalar o botão
+pnpm dlx shadcn@3.5.0 add button
+
+pnpm dlx shadcn@3.5.0 add input
+
+-------------------------------------------------------------------------
+
+
